@@ -645,7 +645,7 @@ for i in range(num_iter):
     print("Image saved as", fname)
     print("Iteration %d completed in %ds" % (i + 1, end_time - start_time))
 
-    if improvement_threshold is not 0.0:
+    if improvement_threshold != 0.0:
         if improvement < improvement_threshold and improvement is not 0.0:
             print("Improvement (%f) is less than improvement threshold (%f). Early stopping script." %
                   (improvement, improvement_threshold))
